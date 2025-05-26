@@ -1,0 +1,180 @@
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container.disable{
+    display: none;
+}
+
+/* header */
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(28, 28, 28);
+}
+
+.header_fixed {
+    background-color: rgb(28, 28, 28);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px; /* Фиксированная высота хедера */
+}
+
+.header_logo {
+    width: 280px; /* Настройте под ваш логотип */
+    height: auto;
+}
+
+/* Section */
+
+.section {
+    padding-top: 0px;
+}
+
+.section_stock {
+    padding-top: 70px;
+    background-color: #fefefe;
+}
+
+.section_filling{
+    padding-top: 30px;
+}
+
+.section_tovar{
+    padding-top: 30px;
+}
+
+/* filling */
+
+.filling{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5%
+}
+
+.filling.active .filling_link{   
+    transform: scale(1.1, 1.1);
+    
+    transition: transform 0.5s linear;
+}
+
+.filling_container{
+    width: 20%;
+    height: 120px;
+    padding-left: 7%;
+}
+
+.filling_link{
+    display: inline-block;
+    vertical-align: top;
+
+
+    color:#1c1c1c;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.filling_item{
+    width: 80px;
+    height: 80px;
+}
+
+.filling_text{
+    color: #000000;
+    text-decoration: none;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}
+
+.filling_link:hover .filling_text{
+    cursor: pointer;
+}
+
+
+/* info */
+
+.info{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+
+}
+
+.info_container{
+    width: auto;
+    height: 100%;
+    margin: 20px 5%;
+    background-color: #f4f4f4;
+}
+
+.info_col{
+    padding: 20px 10%;
+    width: 100%;
+}
+
+
+.info_logo{
+    text-align: center;
+    font-size: 36px;
+    color: #1c1c1c;
+}
+.info_text{
+    font-size: 21px;
+    color: #525252;
+}
+
+.info_mini{
+    font-size: 13px;
+    color:rgb(105, 105, 105)
+}
+
+.example_one{
+    width: 884px;
+    height: 285px;
+}
+
+.example_two{
+    width: 255px;
+    height: 328px;
+}

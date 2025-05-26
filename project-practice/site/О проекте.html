@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href ="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Jura:wght@300&display=swap" rel="stylesheet">
+    <title>Московский политех</title>
+</head>
+<body>
+
+<header class="header header_fixed">
+    <div class="container">
+        <div class="header_inner">
+            <a href="Аннотация.html">
+                <img class="header_logo" src="assets/image/logo.png" alt="Логотип">
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<section class="section  section_filling">
+
+    <div class="filling" id="filling">
+
+        <div class="filling_container">
+            <a class = "filling_link" href="Аннотация.html">
+                <img class="filling_item" src="assets/image/annotation.png" alt="">
+                <span class="filling_text"><b>Аннотация</b></span>
+            </a>
+        </div>
+
+        <div class="filling_container">
+            <a class = "filling_link" href="О проекте.html">
+                <img class="filling_item" src="assets/image/information.png" alt="">
+                <span class="filling_text"><b>О проекте</b></span>
+            </a>
+        </div>
+
+        <div class="filling_container">
+            <a class = "filling_link" href="Участники.html">
+                <img class="filling_item" src="assets/image/participants.png" alt="">
+                <span class="filling_text"><b>Участники</b></span>
+            </a>
+        </div>
+
+        <div class="filling_container">
+            <a class = "filling_link" href="Журнал.html">
+                <img class="filling_item" src="assets/image/magazine.png" alt="">
+                <span class="filling_text"><b>Журнал</b></span>
+            </a>
+        </div>
+
+        <div class="filling_container">
+            <a class = "filling_link" href="Ресурсы.html">
+                <img class="filling_item" src="assets/image/resources.png" alt="">
+                <span class="filling_text"><b>Ресурсы</b></span>
+            </a>
+        </div>
+
+    </div>   
+
+</section>
+
+<div class="info">
+    <div class="info_container">
+        
+        <div class="info_inner">
+            <div class="info_col" id="infromation">
+                <div class="info_logo">О проекте "Автоматизация внутренних бизнес-процессов университета (2ГИС)"</div>
+                <div class="info_text"><p><strong>Цель</strong><br>
+                    В условиях активной цифровизации образовательной среды особенно остро встаёт вопрос об удобной навигации в пределах университетского кампуса. Целью данного проекта является разработка решения, которое поможет новоприбывшим студентам быстрее и легче ориентироваться на территории университета с помощью визуализации зданий в цифровой карте 2ГИС.<br>
+                    Ключевые цели включают:<br>
+                    <br>1.	Разработка системы 3D-визуализации корпусов университета.
+                    <br>2.	Повышение уровня комфорта и адаптации студентов на первых этапах обучения.
+                    <br>3.	Создание удобного, современного и доступного интерфейса для ознакомления с кампусом.
+                    <br>4.	Формирование базы, пригодной для масштабирования на другие вузы и кампусы.
+                    <p><strong>Актуальность</strong><br>
+                    Множество первокурсников испытывают проблемы с ориентированием в корпусах и аудиториях. Этот проект поможет легче находить нужные аудитории и быстрее до них добираться.</p>
+                    <p><strong>Результат</strong><br>
+                    Виртуализация корпусов Московского Политеха в цифровой карте 2ГИС</p>
+                </div>
+                <img class="example_one" src="assets/image/example1.png" alt="">
+                <img class="example_two" src="assets/image/example2.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="info">
+    <div class="info_container">
+        <div class="info_inner">
+            <div class="info_col">
+                <div class="info_logo">О проекте "Dagoba — In-Memory Graph Database"</div>
+                <div class="info_text">
+                    <p><strong>Цель</strong><br>
+                    Реализация собственной графовой базы данных в оперативной памяти на основе Dagoba.
+                    </p>
+
+                    <p><strong>Ключевые задачи</strong><br>
+                    1. Изучить принципы графовых баз данных.<br>
+                    2. Реализовать хранение и обработку вершин и рёбер.<br>
+                    3. Добавить механизм выполнения запросов.<br>
+                    4. Реализовать поддержку двунаправленных связей.
+                    </p>
+
+                    <p><strong>Результат</strong><br>
+                    Минимальная in-memory графовая БД с возможностью обхода графа и двунаправленных связей.
+                    </p>
+
+                    <p><strong>Пример использования</strong></p>
+                    <pre><code>g = Graph()
+g.add_vertex('Alice', {'name': 'Alice'})
+g.add_vertex('Bob', {'name': 'Bob'})
+g.add_edge('Alice', 'Bob', 'knows', reverse=True)
+print(g.v('Bob').out('knows').run())
+                    </code></pre>
+
+                    <p><strong>Схема: Двунаправленные связи</strong></p>
+                    <img src="assets/image/duo.png">
+
+                    <p><strong>Файлы проекта</strong><br>
+                    - <code>dagoba.py</code> — логика хранения и обхода<br>
+                    - <code>test_dagoba.py</code> — примеры<br>
+                    - <code>README.md</code> — документация
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
